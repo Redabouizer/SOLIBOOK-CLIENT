@@ -12,7 +12,7 @@ Support Client : Fourniture de services de support robustes pour répondre aux d
 Gestion des Ventes et Partenariats : Acquisition et gestion des relations avec les prestataires de services.
 Analyse et Optimisation des Données : Utilisation de l'analyse des données pour comprendre le comportement des clients et améliorer les offres de services.
 
-3.Propositions de Valeur
+3. Propositions de Valeur
 Pour les Clients : Commodité pour trouver, comparer et réserver des services de beauté et de bien-être en ligne. Avis des utilisateurs, offres spéciales et programmes de fidélité pour améliorer l'expérience.
 Pour les Prestataires de Services : Accès à une large base de clients, un système de réservation efficace, un support marketing et des outils de gestion d'entreprise pour augmenter les réservations et optimiser les opérations.
 
