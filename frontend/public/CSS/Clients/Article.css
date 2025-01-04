@@ -1,0 +1,96 @@
+.article {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .service-section {
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .service-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .service-list {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 10px;
+  }
+  
+  .service-card {
+    flex: 0 0 auto;
+    width: 256px;
+  }
+  
+  .service-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .service-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .rating-score {
+    font-weight: 600;
+    color: #000;
+    margin-right: 4px;
+  }
+  
+  .star {
+    color: #ffd700;
+    margin-right: 4px;
+  }
+  
+  .service-card p {
+    font-size: 14px;
+    color: #666;
+    margin: 2px 0;
+  }
+  
+  .scroll-button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .service-list::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .service-list {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }

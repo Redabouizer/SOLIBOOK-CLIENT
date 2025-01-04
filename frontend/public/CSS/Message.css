@@ -1,0 +1,278 @@
+.message-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+  position: relative;
+}
+
+.name {
+  position: absolute;
+  top: 20px;
+  left: 20px; /* Changed from "right" to "left" */
+}
+
+.btn-logout {
+  position: absolute;
+  top: 20px;
+  right: 20px; /* Adjusted */
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-logout:hover {
+  background-color: #3e8e41;
+  transform: scale(1.1);
+}
+
+
+.login-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.login-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-button:hover {
+  background-color: #3e8e41;
+  transform: scale(1.1);
+}
+
+.question-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.question {
+  font-size: 36px;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.answer-input {
+  padding: 10px 20px;
+  margin: 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: slideInLeft 1s ease-in-out;
+}
+
+.prev-button,
+.next-button {
+  padding: 10px 20px;
+  margin: 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  background-color: #3e8e41;
+  transform: scale(1.1);
+}
+
+.answer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.answer {
+  font-size: 24px;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: slideInRight 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.slide-left-enter {
+  animation: slideInLeft 0.5s forwards;
+  opacity: 0;
+}
+
+.start-button {
+  animation: pulse 1s infinite;
+  background-color: #3f51b5;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.start-button:hover {
+  background-color: #283593;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.question-container {
+  animation: slide-in 0.5s ease-in-out;
+}
+
+.question-container[data-exit="true"] {
+  animation: slide-out 0.5s ease-in-out;
+}
+
+.answer-input {
+  animation: fade-in 0.5s ease-in-out;
+}
+
+.button-container {
+  animation: slide-up 0.5s ease-in-out;
+}
+
+.prev-button {
+  animation: fade-in 0.5s ease-in-out;
+}
+
+.next-button {
+  animation: fade-in 0.5s ease-in-out;
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-out {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

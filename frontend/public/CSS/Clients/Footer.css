@@ -1,0 +1,127 @@
+.footer {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .download-button {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .download-button .icon {
+    margin-left: 5px;
+  }
+  
+  .google-icon {
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  
+  .footer-section h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-section li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .social-link {
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-link .icon {
+    margin-left: 5px;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .language-button {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .language-icon {
+    margin-right: 5px;
+  }
+  
+  .copyright {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+    }
+  
+    .footer-section {
+      margin-bottom: 30px;
+    }
+  
+    .footer-bottom {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .language-button {
+      margin-bottom: 10px;
+    }
+  }

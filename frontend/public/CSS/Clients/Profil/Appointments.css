@@ -1,0 +1,21 @@
+.app-container {
+    min-height: 100vh;
+    background-color: #f8f9fa;
+  }
+  
+  .main-content {
+    padding: 30px;
+  }
+  
+  .appointments-layout {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  /* Rest of the CSS remains the same, just remove the sidebar-related styles */
+  .appointments-container {
+    width: 350px;
+  }
+  
+  /* Keep all other existing styles... */
